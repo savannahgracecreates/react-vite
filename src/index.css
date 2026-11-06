@@ -51,6 +51,7 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -108,4 +109,12 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }
