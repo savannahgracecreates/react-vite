@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <div className="App">
-      <div>
+      <div className='weather-app'>
         <h1>Weather App</h1>
           <App />
           <div>

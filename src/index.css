@@ -50,10 +50,6 @@
   }
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-}
 
 #root {
   width: 1126px;
@@ -117,4 +113,37 @@ footer {
   text-align: center;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
+}
+.App {
+  max-width: 800px;
+  margin: 60px auto;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf5ff, #f7faff);
+  color: #243b53;
+  font-family: Arial, sans-serif;
+}
+
+.weather-app {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(38, 90, 140, 0.12);
+}
+
+button {
+  border: 5px;
+  border-radius: 18px;
+  padding: 10px 16px;
+  background: #5b9bd5;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #397fbd;
 }
