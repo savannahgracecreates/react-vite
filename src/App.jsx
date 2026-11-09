@@ -35,25 +35,38 @@ function App() {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="weather in your city..." onChange={updateCity} />
+      <input type="search" placeholder="Enter a city..." onChange={updateCity} />
       <button type="Submit">Search</button>
     </form>
   );
 
   if (loaded) {
     return (
-      <div className='container'>
+      <div>
         {form}
+        <h1>{city}</h1>
+        <div className='row'>
+          <div className='col-6'>
         <ul>
+          <li>Sunday</li>
+          <li>7:00pm</li>
           <li>Temperature: {Math.round(weather.temperature)}°F</li>
           <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}mi/h</li>
+         
           <li>
             <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
-      </div>
+        </div>
+        <div className='col-6'>
+        <ul>
+          <li>Precipitation: 10%</li>
+          <li>Humidity: {weather.humidity}%</li>
+          <li>Wind: {weather.wind}mi/h</li>
+        </ul>
+        </div>
+        </div>
+        </div>
     );
   } else {
     return form;

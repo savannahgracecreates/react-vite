@@ -1,3 +1,15 @@
-
+.App {
+  max-width: 800px;
+  margin: 60px auto;
+}
+.weather-app {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 18px;
+  border: solid #CCD28D;
+  box-shadow: 0 12px 35px rgba(38, 90, 140, 0.12);
+}
 
 
