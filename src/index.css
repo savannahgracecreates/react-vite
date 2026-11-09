@@ -1,4 +1,6 @@
-
+.footer {
+  text-align: center;
+}
 
 footer {
   border-top: 1px solid #f9f7fe;
@@ -17,19 +19,6 @@ body {
 }
 
 
-
-button {
-  border: 5px;
-  border-radius: 18px;
-  padding: 10px 16px;
-  background: #5b9bd5;
-  color: white;
-  cursor: pointer;
-}
-
 button:hover {
   background: #397fbd;
-}
-.footer {
-  text-align: center;
 }

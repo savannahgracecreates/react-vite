@@ -11,5 +11,24 @@
   border: solid #CCD28D;
   box-shadow: 0 12px 35px rgba(38, 90, 140, 0.12);
 }
+.form-row {
+display:grid;
+grid-template-columns: 3fr 1fr;
+gap: 10px;
+width: 100%;
+}
 
+.my-form input {
+  width: 100%;
+  box-sizing:border-box;
+}
+
+.search-button {
+  width: 100%;
+  border: 5px;
+  border-radius: 5px;
+  background: #5b9bd5;
+  color: white;
+  cursor: pointer;
+}
 
