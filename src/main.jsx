@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
           <App />
           <div>
       <h3>About this website </h3>
-      <p>This project was coded by Savannah Grace and is opened sourced on <a href="https://github.com/savannahgracecreates/react-vite" target="_blank">GitHub</a></p>
+      <p>This project was coded by <a href="www.savannahgracecreative.com" target="_blank">Savannah Grace</a> and is open-sourced on <a href="https://github.com/savannahgracecreates/react-vite" target="_blank">GitHub</a></p>
   </div>
       </div>
     </div>
