@@ -37,7 +37,7 @@ function App() {
     <span className='form-row'>
       <span className='my-form'>
     <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Enter a city..." onChange={updateCity}/>
+      <input type="search" autoFocus="on" placeholder="Enter a city..." onChange={updateCity}/>
     </form>
     </span>
     <button className="search-button" type="Submit">Search</button>
@@ -55,7 +55,7 @@ function App() {
         <ul>
           <li>Sunday</li>
           <li>7:00pm</li>
-          <li>Temperature: {Math.round(weather.temperature)}°F</li>
+          <li>Temperature: <span className='temperature'>{Math.round(weather.temperature)}</span><span className='unit'>°F</span></li>
           <li>Description: {weather.description}</li>
          
           <li>

@@ -7,18 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className="App">
-      <div className='weather-app'>
+     <div className="App">
         <div className='container'>
-        <h1>Weather App</h1>
-          <App />
-          <div className='footer'>
-      <h3>About this website </h3>
-      <p>This project was coded by <a href="https://savannahgracecreative.com/" target="_blank">Savannah Grace</a> and is open-sourced on <a href="https://github.com/savannahgracecreates/react-vite" target="_blank">GitHub</a></p>
+          <App /> 
   </div>
       </div>
-    </div>
+      <div className='footer'>
+      <h3>About this website </h3>
+      <p>This project was coded by <a href="https://savannahgracecreative.com/" target="_blank">Savannah Grace</a> and is open-sourced on <a href="https://github.com/savannahgracecreates/react-vite" target="_blank">GitHub</a></p>
         </div>
+      
        
   </StrictMode>,
 )
