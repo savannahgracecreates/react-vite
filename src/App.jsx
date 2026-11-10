@@ -51,25 +51,26 @@ function App() {
       
         <h1>{city}</h1>
         <div className='row'>
-          <div className='col-6'>
-        <ul>
+        <div className='col'>
+          <img  src={weather.icon} alt={weather.description} />
+          </div>
+          <div className='col'>
+          <span className='temperature'>{Math.round(weather.temperature)}</span><span className='unit'>°F</span>
+          </div>
+          <div className='col'>
+          <ul>
           <li>Sunday</li>
           <li>7:00pm</li>
-          <li>Temperature: <span className='temperature'>{Math.round(weather.temperature)}</span><span className='unit'>°F</span></li>
           <li>Description: {weather.description}</li>
-         
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
         </ul>
         </div>
-        <div className='col-6'>
-        <ul>
+        <div className='col'>
+          <ul>
           <li>Precipitation: 10%</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}mi/h</li>
-        </ul>
-        </div>
+          </ul>
+          </div>
         </div>
         </div>
     );

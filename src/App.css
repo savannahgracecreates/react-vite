@@ -38,6 +38,11 @@
   line-height: 64px;
   margin-left: 5px;
 }
+.App .unit {
+  position: relative;
+  top: -32px;
+  margin-left: 5px;
+}
 
 .App form {
   margin-bottom: 20px;
