@@ -34,20 +34,19 @@ function App() {
   }
 
   let form = (
-    <div className='form-row'>
-      <div className='my-form'>
+    <span className='form-row'>
+      <span className='my-form'>
     <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Enter a city..." onChange={updateCity} />
+      <input type="search" placeholder="Enter a city..." onChange={updateCity}/>
     </form>
-    </div>
+    </span>
     <button className="search-button" type="Submit">Search</button>
-    </div>
+    </span>
   );
 
   if (loaded) {
     return (
-      <div>
-        
+        <div>
         {form}
       
         <h1>{city}</h1>
