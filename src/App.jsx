@@ -17,7 +17,7 @@ function App() {
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
-      icon: `<img src="${response.data.condition.icon_url}"/>`,
+      icon: response.data.condition.icon_url,
       description: response.data.condition.description
     });
   }
