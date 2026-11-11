@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios';
+import FormattedDate from './FormattedDate';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     setLoaded(true);
     setWeather({
       loadedCity: response.data.city,
-      time: response.data.time,
+      date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
@@ -59,8 +60,7 @@ function App() {
           </div>
           <div className='col'>
           <ul>
-          <li>Sunday</li>
-          <li>{weather.time}</li>
+          <li><FormattedDate date={weather.date} /></li>
           <li>Description: {weather.description}</li>
         </ul>
         </div>
