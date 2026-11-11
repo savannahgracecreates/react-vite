@@ -66,7 +66,6 @@ function App() {
         </div>
         <div className='col'>
           <ul>
-          <li>Precipitation: 10%</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}mi/h</li>
           </ul>
