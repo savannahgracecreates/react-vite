@@ -12,6 +12,7 @@ function App() {
   function updateWeather(response) {
     setLoaded(true);
     setWeather({
+      loadedCity: response.data.city,
       time: response.data.time,
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
@@ -48,7 +49,7 @@ function App() {
         <div>
         {form}
       
-        <h1>{city}</h1>
+        <h1>{weather.loadedCity}</h1>
         <div className='row'>
         <div className='col'>
           <img  src={weather.icon} alt={weather.description} />
