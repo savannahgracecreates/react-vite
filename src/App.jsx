@@ -12,20 +12,19 @@ function App() {
   function updateWeather(response) {
     setLoaded(true);
     setWeather({
-      temperature: response.data.main.temp,
+      time: response.data.time,
+      temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      icon: `http://openweathermap.org/img/wn/${
-        response.data.weather[0].icon
-      }@2x.png`,
-      description: response.data.weather[0].description
+      humidity: response.data.temperature.humidity,
+      icon: `http://shecodesio-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}`,
+      description: response.data.condition.description
     });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    const apiKey = "094780c710fa4efd669f0df8c3991927";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    const apiKey = "d39d6443520afb97te34a49a61faf9o3";
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(updateWeather);
   }
 
@@ -60,7 +59,7 @@ function App() {
           <div className='col'>
           <ul>
           <li>Sunday</li>
-          <li>7:00pm</li>
+          <li>{weather.time}</li>
           <li>Description: {weather.description}</li>
         </ul>
         </div>
