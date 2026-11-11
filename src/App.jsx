@@ -17,7 +17,7 @@ function App() {
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
-      icon: `http://shecodesio-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}`,
+      icon: `<img src="${response.data.condition.icon_url}"/>`,
       description: response.data.condition.description
     });
   }
