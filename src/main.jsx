@@ -5,10 +5,12 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <div className="App">
         <div className='container'>
+         
           <App /> 
   </div>
       </div>
