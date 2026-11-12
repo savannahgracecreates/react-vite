@@ -34,7 +34,7 @@
 .App .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 48px;
   line-height: 12px;
   margin-left: 5px;
 }
