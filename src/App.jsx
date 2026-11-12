@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios';
 import FormattedDate from './FormattedDate';
+import WeatherTemperature from './WeatherTemperature';
 
 
 function App() {
@@ -84,9 +85,8 @@ function App() {
 
           <div className='col'>
             <span className='temperature'>
-              {Math.round(weather.temperature)}
+            <WeatherTemperature temperature={weather.temperature} />
             </span>
-            <span className='unit'>°F</span>
           </div>
 
           <div className='col'>

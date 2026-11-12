@@ -35,13 +35,16 @@
   font-weight: bold;
   color: rgb(33, 33, 33);
   font-size: 64px;
-  line-height: 64px;
+  line-height: 12px;
   margin-left: 5px;
 }
 .App .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
   position: relative;
-  top: -32px;
-  margin-left: 5px;
+  line-height: 1;
+  top: -34px;
 }
 
 .App form {
