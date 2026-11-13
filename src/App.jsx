@@ -3,6 +3,7 @@ import './App.css'
 import axios from 'axios';
 import FormattedDate from './FormattedDate';
 import WeatherTemperature from './WeatherTemperature';
+import WeatherForecast from './WeatherForecast';
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
             <span className='temperature'>
             <WeatherTemperature temperature={weather.temperature} />
             </span>
+            <WeatherForecast icon={weather.icon} size={12}/>
           </div>
 
           <div className='col'>
