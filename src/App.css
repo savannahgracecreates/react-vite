@@ -84,7 +84,7 @@ width: 100%;
   
 }
 
-@media (max-width: 750px) {
+@media (max-width: 749px) {
   .App {
     width: 650px;
     max-width: calc(100% - 32px);

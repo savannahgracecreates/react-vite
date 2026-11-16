@@ -26,7 +26,7 @@
 .WeatherForecast .col {
     flex: 1;
 }
-@media (max-width: 960px) {
+@media (max-width: 749px) {
     .WeatherForecast img {
         height: 30px;
         width: 30px; 
