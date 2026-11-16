@@ -16,6 +16,7 @@ function App() {
     setLoaded(true);
     setWeather({
       loadedCity: response.data.city,
+      coordinates: response.data.coordinates,
       date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
@@ -88,7 +89,10 @@ function App() {
             <span className='temperature'>
             <WeatherTemperature temperature={weather.temperature} />
             </span>
-            <WeatherForecast icon={weather.icon} size={12}/>
+            <WeatherForecast
+    
+    coordinates={weather.coordinates}
+/>
           </div>
 
           <div className='col'>
