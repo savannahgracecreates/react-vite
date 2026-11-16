@@ -10,7 +10,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
      <div className="App">
         <div className='container'>
-         
           <App /> 
   </div>
       </div>
