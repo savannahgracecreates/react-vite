@@ -26,3 +26,23 @@
 .WeatherForecast .col {
     flex: 1;
 }
+@media (max-width: 960px) {
+    .WeatherForecast img {
+        height: 30px;
+        width: 30px; 
+     }
+     .WeatherForecast-day {
+        color: #CCD28D;
+        font-size: 15px;
+      }
+      .WeatherForecast-temps-min {
+        opacity: 0.6;
+        margin-left: 5px;
+        font-size: 15px;
+      }
+      .WeatherForecast-temps-max {
+        opacity: 0.6;
+        margin-left: 5px;
+        font-size: 15px;
+      }
+}
