@@ -16,7 +16,8 @@ createRoot(document.getElementById('root')).render(
       </div>
       <div className='footer'>
       <h3>About this website </h3>
-      <p>This project was coded by <a href="https://savannahgracecreative.com/" target="_blank">Savannah Grace</a> and is open-sourced on <a href="https://github.com/savannahgracecreates/react-vite" target="_blank">GitHub</a></p>
+      <p>This project was coded by <a href="https://savannahgracecreative.com/" target="_blank"
+      rel= "noopener noreferrer">Savannah Grace</a> and is open-sourced on <a href="https://github.com/savannahgracecreates/react-vite" target="_blank" rel= "noopener noreferrer">GitHub</a></p>
         </div>
       
        
