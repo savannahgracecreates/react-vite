@@ -18,3 +18,11 @@
     height: 42px;
     width: 42px; 
  }
+ .WeatherForecast .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.WeatherForecast .col {
+    flex: 1;
+}

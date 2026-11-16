@@ -1,6 +1,7 @@
 .App {
-  width: 600px;
+  width: 750px;
   max-width: calc(100% - 32px);
+  margin: 50px auto 0;
   box-sizing: border-box;
   padding: 16px;
   margin-top: 50px;
@@ -17,7 +18,7 @@
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;
   height: 28px;
-  line-height: 28.8 px;
+  line-height: 28.8px;
 }
 .App ul{
   margin: 0;
@@ -34,17 +35,17 @@
 .App .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 48px;
-  line-height: 12px;
+  font-size: 50px;
+  line-height: 1px;
   margin-left: 1px;
 }
 .App .unit {
   color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 400;
-  position: relative;
   line-height: 1;
-  top: -34px;
+  margin-top: 1px;
+  margin-left: 2px;
 }
 
 .App form {
@@ -73,6 +74,13 @@ width: 100%;
   background: #5b9bd5;
   color: white;
   cursor: pointer;
+  
+}
+
+.WeatherTemperature {
+    display: inline-flex;
+    align-items: flex-start; 
+    white-space: nowrap;     
   
 }
 

@@ -86,16 +86,10 @@ function App() {
           </div>
 
           <div className='col'>
-            <span className='temperature'>
+         
             <WeatherTemperature temperature={weather.temperature} />
-            </span>
-            <WeatherForecast
-    
-    coordinates={weather.coordinates}
-/>
-          </div>
-
-          <div className='col'>
+            </div>
+            <div className='col'>
             <ul>
               <li><FormattedDate date={weather.date} /></li>
               <li>Description: {weather.description}</li>
@@ -108,6 +102,14 @@ function App() {
               <li>Wind: {weather.wind}mi/h</li>
             </ul>
           </div>
+            <div className='col'>
+            <WeatherForecast
+    
+    coordinates={weather.coordinates}
+/>
+          </div>
+
+         
 
         </div>
       </div>
